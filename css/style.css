@@ -7,10 +7,19 @@ header{
   background-color: #cfe8ff;
 }
 
+/* NAV theo yêu cầu bài */
 nav{
+  display: inline-block;
+  width: 80%;
   background-color: #333;
 }
 
+/* chỉ ảnh trong nav */
+nav img{
+  width: 10%;
+}
+
+/* link trong nav */
 nav a{
   color: white;
   text-decoration: none;
@@ -25,11 +34,14 @@ footer{
   background-color: #cfe8ff;
 }
 
+/* COMMENT lại li theo yêu cầu */
+ /*
 li{
   display: inline-block;
   width: 200px;
   text-align: center;
 }
+*/
 
 h1{
   text-align: center;
@@ -39,4 +51,25 @@ h1{
 
 p{
   line-height: 1.6;
+}
+
+/* GRID layout */
+.grid{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+/* ảnh trong grid */
+.grid img{
+  width: 100%;
+}
+
+/* FLEX layout */
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
